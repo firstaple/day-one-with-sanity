@@ -9,7 +9,7 @@ export function DoorsOpenInput(props: NumberInputProps) {
   const date = useFormValue(['date']) as string | undefined
 
   return (
-    <Stack>
+    <Stack space={3}>
       {props.renderDefault(props)}
       {typeof props.value === 'number' && date ? (
         <Text size={1}>
